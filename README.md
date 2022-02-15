@@ -1,6 +1,6 @@
 # ECstudio-circuits
 This repository contains the Analog circuits simulated in Electric circuit studio application
-**1. The full wave rectifier**
+# 1. The full wave rectifier
 Rectifier is a circuit which converts Alternating signal into steady signal,in common AC to DC.
 At the output we don't get the pure DC but we obtain the pulsating DC signal(a signal which contains both the AC component along with the DC).
 The function of the full wave rectifier is to clip the negative half cycle of the input AC signal. The pulsating DC signal can be converted into pure DC signal by connecting 
