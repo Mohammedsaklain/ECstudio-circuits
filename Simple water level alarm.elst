@@ -1,0 +1,2418 @@
+<?xml version="1.0" encoding="UTF-8"?><circuit>
+    <element>
+        <name>Settings</name>
+        <description>Settings</description>
+        <position>(0 0)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>None</constant>
+            <transStart>0</transStart>
+            <transStop>5</transStop>
+            <transPointCount>50</transPointCount>
+            <transInitCond>yes</transInitCond>
+            <dcStart>1</dcStart>
+            <dcStop>10</dcStop>
+            <dcStep>1</dcStep>
+            <dcSrc> </dcSrc>
+            <acStart>1</acStart>
+            <acStop>10</acStop>
+            <acPointCount>50</acPointCount>
+            <acType>DEC</acType>
+            <analysis>Transient</analysis>
+            <showGrid>yes</showGrid>
+            <canvasBackgroundColor>#ffffffff</canvasBackgroundColor>
+            <canvasTextColor>#ff555555</canvasTextColor>
+            <lineWidth>5</lineWidth>
+            <date>2022/05/30/15:15:51</date>
+            <minSize>0.1</minSize>
+            <maxSize>40</maxSize>
+            <gridColor>#22333333</gridColor>
+            <boxMargins>0</boxMargins>
+            <textboxMargins>0</textboxMargins>
+            <showPins>yes</showPins>
+            <iecSymbols>no</iecSymbols>
+            <version>4.0</version>
+            <precision>2</precision>
+            <autoTime>yes</autoTime>
+            <lineColor>#ff555555</lineColor>
+            <plotForegroundColor>#ff555555</plotForegroundColor>
+            <plotBackgroundColor>#ffffffff</plotBackgroundColor>
+            <boxBorderColor>#80cccccc</boxBorderColor>
+            <controlColor>#cccccccc</controlColor>
+            <graphLineWidth>4</graphLineWidth>
+            <forcePreserve>no</forcePreserve>
+            <forceGear>yes</forceGear>
+        </subelement>
+    </element>
+    <element>
+        <name>555 timer</name>
+        <description>555 timer</description>
+        <position>(1700 1300)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>555-symbol</constant>
+            <subckt>555</subckt>
+        </subelement>
+        <subelement>
+            <name>Refdes</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-refdes</constant>
+            <string>refdes</string>
+            <font>Sans Normal</font>
+            <denotation>IC</denotation>
+            <designation>1</designation>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>Marker</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-marker</constant>
+            <string>555</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>555-GND</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-GND</constant>
+            <string>GND</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>555-DIS</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-DIS</constant>
+            <string>DIS</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>555-OUT</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-OUT</constant>
+            <string>OUT</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>555-RES</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-RES</constant>
+            <string>RES</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>555-CTRL</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-CTRL</constant>
+            <string>CTRL</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>555-THR</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-THR</constant>
+            <string>THR</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>555-TRG</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-TRG</constant>
+            <string>TRG</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>555-VCC</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>555-VCC</constant>
+            <string>VCC</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-555-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-555-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-555-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-555-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-2-555-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-2-555-I</constant>
+            <string>curr. 2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-2-555-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-2-555-V</constant>
+            <string>volt. 2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-3-555-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-3-555-V</constant>
+            <string>volt. 3</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-3-555-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-3-555-I</constant>
+            <string>curr. 3</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-4-555-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-4-555-V</constant>
+            <string>volt. 4</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-4-555-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-4-555-I</constant>
+            <string>curr. 4</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-5-555-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-5-555-V</constant>
+            <string>volt. 5</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-5-555-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-5-555-I</constant>
+            <string>curr. 5</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-6-555-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-6-555-V</constant>
+            <string>volt. 6</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-6-555-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-6-555-I</constant>
+            <string>curr. 6</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-7-555-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-7-555-V</constant>
+            <string>volt. 7</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-7-555-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-7-555-I</constant>
+            <string>curr. 7</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-8-555-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-8-555-V</constant>
+            <string>volt. 8</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-8-555-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-8-555-I</constant>
+            <string>curr. 8</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Resistor</name>
+        <description>Resistor</description>
+        <position>(1200 1300)</position>
+        <rotation>90</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Resistor-symbol</constant>
+        </subelement>
+        <subelement>
+            <name>Refdes</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>R-refdes</constant>
+            <font>Sans Normal</font>
+            <denotation>R</denotation>
+            <designation>1</designation>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>Resistance</name>
+            <type>label-param</type>
+            <editable>yes</editable>
+            <constant>R-resistance</constant>
+            <font>Sans Normal</font>
+            <value>100</value>
+            <unit>kΩ</unit>
+            <minValue>1E-17</minValue>
+            <maxValue>1E17</maxValue>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-R-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-R-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-R-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-R-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-2-R-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-2-R-V</constant>
+            <string>volt. 2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-2-R-Vdiff</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-2-R-Vdiff</constant>
+            <string>volt.1-2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Resistor</name>
+        <description>Resistor</description>
+        <position>(1000 1100)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Resistor-symbol</constant>
+        </subelement>
+        <subelement>
+            <name>Refdes</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>R-refdes</constant>
+            <font>Sans Normal</font>
+            <denotation>R</denotation>
+            <designation>2</designation>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>Resistance</name>
+            <type>label-param</type>
+            <editable>yes</editable>
+            <constant>R-resistance</constant>
+            <font>Sans Normal</font>
+            <value>1</value>
+            <unit>kΩ</unit>
+            <minValue>1E-17</minValue>
+            <maxValue>1E17</maxValue>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-R-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-R-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-R-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-R-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-2-R-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-2-R-V</constant>
+            <string>volt. 2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-2-R-Vdiff</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-2-R-Vdiff</constant>
+            <string>volt.1-2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Polarized capacitor</name>
+        <description>Polarized capacitor</description>
+        <position>(1200 1600)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>C-polar-symbol</constant>
+        </subelement>
+        <subelement>
+            <name>Refdes</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>C-refdes</constant>
+            <string>refdes</string>
+            <font>Sans Normal</font>
+            <denotation>C</denotation>
+            <designation>1</designation>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>Capacitance</name>
+            <type>label-param</type>
+            <editable>yes</editable>
+            <constant>C-param</constant>
+            <font>Sans Normal</font>
+            <value>2.2</value>
+            <unit>μF</unit>
+            <minValue>0</minValue>
+            <maxValue>1E17</maxValue>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>Extra</name>
+            <type>extra</type>
+            <value>IC=0V</value>
+        </subelement>
+        <subelement>
+            <name>pin-1-C-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-C-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-C-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-C-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-2-C-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-2-C-V</constant>
+            <string>volt. 2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-2-C-Vdiff</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-2-C-Vdiff</constant>
+            <string>volt.1-2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(1200 1100)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>1</designation>
+            <points>(2)(0 0)(200 0)(200 100)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(1400 1400)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>2</designation>
+            <points>(2)(0 0)(0 100)(-200 100)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(1400 1300)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>3</designation>
+            <points>(1)(0 0)(0 100)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(1200 1700)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>4</designation>
+            <points>(1)(0 0)(400 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(1800 900)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>5</designation>
+            <points>(1)(0 0)(-200 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(1600 900)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>6</designation>
+            <points>(1)(0 0)(-800 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(800 900)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>7</designation>
+            <points>(1)(0 0)(-200 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(800 1100)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>9</designation>
+            <points>(1)(0 0)(0 700)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(600 900)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>8</designation>
+            <points>(1)(0 0)(0 900)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>VDC</name>
+        <description>DC voltage source</description>
+        <position>(2700 1300)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>V-symbol</constant>
+        </subelement>
+        <subelement>
+            <name>Refdes</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>V-refdes</constant>
+            <string>refdes</string>
+            <font>Sans Normal</font>
+            <denotation>V</denotation>
+            <designation>1</designation>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>Voltage</name>
+            <type>label-param</type>
+            <editable>yes</editable>
+            <constant>V-param</constant>
+            <font>Sans Normal</font>
+            <value>3</value>
+            <unit> V</unit>
+            <minValue>-1E17</minValue>
+            <maxValue>1E17</maxValue>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-V-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-V-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-V-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-V-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-2-V-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-2-V-V</constant>
+            <string>volt. 2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-2-V-Vdiff</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-2-V-Vdiff</constant>
+            <string>volt.1-2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(1600 1700)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>12</designation>
+            <points>(1)(0 0)(0 300)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Gnd</name>
+        <description>Ground</description>
+        <position>(2300 2000)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Ground-symbol</constant>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(600 1800)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>15</designation>
+            <points>(1)(0 0)(200 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(1600 2000)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>13</designation>
+            <points>(1)(0 0)(700 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(2300 2000)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>18</designation>
+            <points>(1)(0 0)(200 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>LED diode</name>
+        <description>LED diode</description>
+        <position>(2100 1100)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>LED-symbol</constant>
+            <modelType>D</modelType>
+        </subelement>
+        <subelement>
+            <name>Picture</name>
+            <type>picture</type>
+            <value>Default</value>
+        </subelement>
+        <subelement>
+            <name>Refdes</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>Diode-refdes</constant>
+            <string>refdes</string>
+            <font>Sans Normal</font>
+            <denotation>D</denotation>
+            <designation>5</designation>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showText>yes</showText>
+            <showBox>no</showBox>
+            <foregroundColor>#ff555555</foregroundColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>Saturation current</name>
+            <type>param</type>
+            <string>IS</string>
+            <value>93.2</value>
+            <unit>pA</unit>
+            <minValue>-1E17</minValue>
+            <maxValue>1E17</maxValue>
+        </subelement>
+        <subelement>
+            <name>Ohmic resistance</name>
+            <type>param</type>
+            <string>RS</string>
+            <value>42</value>
+            <unit>mΩ</unit>
+            <minValue>0</minValue>
+            <maxValue>1E17</maxValue>
+        </subelement>
+        <subelement>
+            <name>Emission coefficient</name>
+            <type>param</type>
+            <string>N</string>
+            <value>4.61</value>
+            <unit> </unit>
+            <minValue>0</minValue>
+            <maxValue>1E17</maxValue>
+        </subelement>
+        <subelement>
+            <name>Transit time</name>
+            <type>param</type>
+            <string>TT</string>
+            <value>10</value>
+            <unit>ns</unit>
+            <minValue>0</minValue>
+            <maxValue>1E17</maxValue>
+        </subelement>
+        <subelement>
+            <name>Junction capacitance</name>
+            <type>param</type>
+            <string>CJO</string>
+            <value>2.97</value>
+            <unit>pF</unit>
+            <minValue>0</minValue>
+            <maxValue>1E17</maxValue>
+        </subelement>
+        <subelement>
+            <name>Extra</name>
+            <type>extra</type>
+            <value>IC=0</value>
+        </subelement>
+        <subelement>
+            <name>Model</name>
+            <type>model</type>
+        </subelement>
+        <subelement>
+            <name>pin-1-D-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-D-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-D-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-D-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-2-D-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-2-D-V</constant>
+            <string>volt. 2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-2-D-Vdiff</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-2-D-Vdiff</constant>
+            <string>volt.1-2</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(2700 1500)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>14</designation>
+            <points>(2)(0 0)(0 500)(-200 500)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(2100 900)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>10</designation>
+            <points>(1)(0 0)(-300 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(2100 1300)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>11</designation>
+            <points>(1)(0 0)(-100 0)(0 0)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+    <element>
+        <name>Wire</name>
+        <description>Wire</description>
+        <position>(2700 1100)</position>
+        <rotation>0</rotation>
+        <flip>false</flip>
+        <activeSub>0</activeSub>
+        <subelement>
+            <name>Main</name>
+            <type>Main</type>
+            <constant>Wire-symbol</constant>
+            <designation>16</designation>
+            <points>(2)(0 0)(0 -200)(-600 -200)(0 0)</points>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-V</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-V</constant>
+            <string>volt. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+        <subelement>
+            <name>pin-1-W-I</name>
+            <type>label</type>
+            <editable>yes</editable>
+            <constant>pin-1-W-I</constant>
+            <string>curr. 1</string>
+            <font>Sans Normal</font>
+            <shift>(0 0)</shift>
+            <scale>1</scale>
+            <rotation>0</rotation>
+            <showGraph>no</showGraph>
+            <showText>no</showText>
+            <showIndicator>no</showIndicator>
+            <showPlot>no</showPlot>
+            <showBox>no</showBox>
+            <numType>Real</numType>
+            <cursor1>no</cursor1>
+            <cursor2>no</cursor2>
+            <plotColor>0</plotColor>
+            <backgroundColor>#ffdddddd</backgroundColor>
+            <roundedBox>no</roundedBox>
+            <alignment>Default</alignment>
+        </subelement>
+    </element>
+</circuit>
